@@ -1,0 +1,20 @@
+<!-- ==================== Project Definition ============================== -->
+<project name="Scala" default="all" basedir=".">
+
+
+<!-- ==================== All Target ====================================== -->	
+<target name="all" description="Run" depends="run">
+</target>
+
+<!-- ==================== Dev Prep ====================================== -->	
+<target name="run" description="Run">
+	<echo message="Running examples ..."/>
+	<exec executable="/usr/bin/mvn">
+		<arg value="scala:run"/>
+		<arg value="-DmainClass=scalastudy.HelloWorld"/>
+
+	</exec>	
+</target>
+
+</project>	
+
